@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: acaefdecaa60f5b47b28b7e4d9d54a42
+guid: d0e7ea17c619a364caa402ad66fe5726
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8031492783339590410
-    second: werewolf_UI 1_0
+      213: -8841482439945217356
+    second: werewolf_UI_SeparateSenses_0
   - first:
-      213: -5457748543167888195
-    second: werewolf_UI 1_1
+      213: -6719840888362839509
+    second: werewolf_UI_SeparateSenses_1
   - first:
-      213: 4617584721137413951
-    second: werewolf_UI 1_2
+      213: 38947361545433730
+    second: werewolf_UI_SeparateSenses_2
   - first:
-      213: 7747142238355797267
-    second: werewolf_UI 1_3
+      213: -5352698415083770088
+    second: werewolf_UI_SeparateSenses_3
   - first:
-      213: 8583084561638853812
-    second: werewolf_UI 1_4
+      213: -7293533743487785032
+    second: werewolf_UI_SeparateSenses_4
   - first:
-      213: -2823039693272923141
-    second: werewolf_UI 1_5
+      213: 9210765735831816677
+    second: werewolf_UI_SeparateSenses_5
   - first:
-      213: 1876396623992636540
-    second: werewolf_UI 1_6
+      213: 3832458780427301964
+    second: werewolf_UI_SeparateSenses_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,155 +118,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: werewolf_UI 1_0
+      name: werewolf_UI_SeparateSenses_Touch
       rect:
         serializedVersion: 2
         x: 49
-        y: 661
+        y: 813
         width: 598
         height: 1343
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a03d11f3228957f60800000000000000
-      internalID: 8031492783339590410
+      spriteID: 4ba1637a09ebc4580800000000000000
+      internalID: -8841482439945217356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI 1_1
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 492
-        width: 175
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db4821bcd9e2244b0800000000000000
-      internalID: -5457748543167888195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: werewolf_UI 1_2
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 438
-        width: 267
-        height: 310
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f3faaafb6d4f41040800000000000000
-      internalID: 4617584721137413951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: werewolf_UI 1_3
+      name: werewolf_UI_SeparateSenses_Body
       rect:
         serializedVersion: 2
         x: 787
-        y: 321
+        y: 473
         width: 1304
         height: 1721
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3153f95d1d0638b60800000000000000
-      internalID: 7747142238355797267
+      spriteID: b22dcf5b0545eb2a0800000000000000
+      internalID: -6719840888362839509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI 1_4
+      name: werewolf_UI_SeparateSenses_Sight
       rect:
         serializedVersion: 2
-        x: 202
-        y: 216
+        x: 29
+        y: 451
+        width: 674
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81fa22bb62567b5b0800000000000000
+      internalID: -5352698415083770088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: werewolf_UI_SeparateSenses_Smell
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 220
         width: 222
         height: 145
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4bc8f950fed3d1770800000000000000
-      internalID: 8583084561638853812
+      spriteID: 8b7e51ef3b928ca90800000000000000
+      internalID: -7293533743487785032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI 1_5
+      name: werewolf_UI_SeparateSenses_Hearing
       rect:
         serializedVersion: 2
-        x: 713
-        y: 96
-        width: 235
-        height: 328
+        x: 777
+        y: 29
+        width: 1080
+        height: 421
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf3c3a72b5c82d8d0800000000000000
-      internalID: -2823039693272923141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: werewolf_UI 1_6
-      rect:
-        serializedVersion: 2
-        x: 1403
-        y: 8
-        width: 381
-        height: 412
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c74c2d6b9cc4a0a10800000000000000
-      internalID: 1876396623992636540
+      spriteID: c4432bf94f0af2530800000000000000
+      internalID: 3832458780427301964
       vertices: []
       indices: 
       edges: []
@@ -275,7 +231,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b8f647c4dfce25b41aa400cde0673ba1
     internalID: 0
     vertices: []
     indices: 
@@ -285,13 +241,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      werewolf_UI 1_0: 8031492783339590410
-      werewolf_UI 1_1: -5457748543167888195
-      werewolf_UI 1_2: 4617584721137413951
-      werewolf_UI 1_3: 7747142238355797267
-      werewolf_UI 1_4: 8583084561638853812
-      werewolf_UI 1_5: -2823039693272923141
-      werewolf_UI 1_6: 1876396623992636540
+      werewolf_UI_SeparateSenses_Body: -6719840888362839509
+      werewolf_UI_SeparateSenses_Hearing: 3832458780427301964
+      werewolf_UI_SeparateSenses_Hearing_RightEar: 9210765735831816677
+      werewolf_UI_SeparateSenses_Sight: -5352698415083770088
+      werewolf_UI_SeparateSenses_Sight_RightEye: 38947361545433730
+      werewolf_UI_SeparateSenses_Smell: -7293533743487785032
+      werewolf_UI_SeparateSenses_Touch: -8841482439945217356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
