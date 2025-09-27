@@ -18,8 +18,8 @@ public class CanvasManager : MonoBehaviour
         Instantiate(Resources.Load("Canvas/" + "Canvas_TitleScreen") as GameObject);
     }
 
-    /*public void ShowCanvasFrontEnd()
+    public void ShowCanvasFrontEnd()
     {
         Instantiate(Resources.Load("Canvas/" + "Canvas_FrontEnd") as GameObject);
-    }*/
+    }
 }

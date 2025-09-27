@@ -10,7 +10,7 @@ public class TitleScreen : MonoBehaviour
     public void OnPressStartClicked()
     {
         Debug.Log("<color=green>Play Now Clicked</color>");
-        CanvasManager.Instance.ShowCanvasTitleScreen();
+        CanvasManager.Instance.ShowCanvasFrontEnd();
 
     }
 }
