@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: b6913ed1aaba45b41a4d1b30ed46a81d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6621707154338337009
+    second: werewolf_UI_Buttons_0
+  - first:
+      213: -4023260374564235870
+    second: werewolf_UI_Buttons_1
+  - first:
+      213: -343269916338676484
+    second: werewolf_UI_Buttons_2
+  - first:
+      213: 5458679739104970888
+    second: werewolf_UI_Buttons_3
+  - first:
+      213: -1046117755044075919
+    second: werewolf_UI_Buttons_4
+  - first:
+      213: 9007185829280844243
+    second: werewolf_UI_Buttons_5
+  - first:
+      213: -6438505283826174997
+    second: werewolf_UI_Buttons_6
+  - first:
+      213: 2893117254011434841
+    second: werewolf_UI_Buttons_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: werewolf_UI_Buttons_Eat
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1342
+        width: 578
+        height: 610
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f200b2d68fa14a0800000000000000
+      internalID: -6621707154338337009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: werewolf_UI_Buttons_MoveOn
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1361
+        width: 578
+        height: 591
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5913761028a28c0800000000000000
+      internalID: -4023260374564235870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: werewolf_UI_Buttons_TimeBar
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1091
+        width: 1168
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc1e8e64d57c3bf0800000000000000
+      internalID: -343269916338676484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: werewolf_UI_Buttons_TimeIndicator
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 1118
+        width: 188
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88849f72d4021cb40800000000000000
+      internalID: 5458679739104970888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: werewolf_UI_Buttons_Time
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 898
+        width: 1103
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1766e51c1717b71f0800000000000000
+      internalID: -1046117755044075919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: werewolf_UI_Buttons_5
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 697
+        width: 1103
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d987342ac3fffc70800000000000000
+      internalID: 9007185829280844243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: werewolf_UI_Buttons_Hunger
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 498
+        width: 1103
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3b0199e85d5a6a0800000000000000
+      internalID: -6438505283826174997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: werewolf_UI_Buttons_Standard
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 101
+        width: 1078
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957b7ea60da662820800000000000000
+      internalID: 2893117254011434841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6da39b13d4fc33f4cb5add192c17924b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      werewolf_UI_Buttons_5: 9007185829280844243
+      werewolf_UI_Buttons_Eat: -6621707154338337009
+      werewolf_UI_Buttons_Hunger: -6438505283826174997
+      werewolf_UI_Buttons_MoveOn: -4023260374564235870
+      werewolf_UI_Buttons_Standard: 2893117254011434841
+      werewolf_UI_Buttons_Time: -1046117755044075919
+      werewolf_UI_Buttons_TimeBar: -343269916338676484
+      werewolf_UI_Buttons_TimeIndicator: 5458679739104970888
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
