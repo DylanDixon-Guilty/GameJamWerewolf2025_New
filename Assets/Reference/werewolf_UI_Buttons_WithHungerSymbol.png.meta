@@ -1,37 +1,40 @@
 fileFormatVersion: 2
-guid: 683e231657223794fb4979b990ee81a6
+guid: c6c232442a1345b4f83a74c349b2b0f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2455504837958877349
-    second: werewolf_UI_Buttons(Verticle)_0
+      213: -2835408772820232736
+    second: werewolf_UI_Buttons_WithHungerSymbol_0
   - first:
-      213: 3324122432475875630
-    second: werewolf_UI_Buttons(Verticle)_1
+      213: 4818628087796322469
+    second: werewolf_UI_Buttons_WithHungerSymbol_1
   - first:
-      213: 693410293686118840
-    second: werewolf_UI_Buttons(Verticle)_2
+      213: 9175294137958569508
+    second: werewolf_UI_Buttons_WithHungerSymbol_2
   - first:
-      213: 1061777712444641291
-    second: werewolf_UI_Buttons(Verticle)_3
+      213: 3476256325185777646
+    second: werewolf_UI_Buttons_WithHungerSymbol_3
   - first:
-      213: 7718328335250461111
-    second: werewolf_UI_Buttons(Verticle)_4
+      213: -8530051755325503847
+    second: werewolf_UI_Buttons_WithHungerSymbol_4
   - first:
-      213: -3275698018696706260
-    second: werewolf_UI_Buttons(Verticle)_5
+      213: -2914488501051948572
+    second: werewolf_UI_Buttons_WithHungerSymbol_5
   - first:
-      213: 6743083940213444044
-    second: werewolf_UI_Buttons(Verticle)_6
+      213: 2332251828000304254
+    second: werewolf_UI_Buttons_WithHungerSymbol_6
   - first:
-      213: -8499659727523724521
-    second: werewolf_UI_Buttons(Verticle)_7
+      213: -7096730636234498276
+    second: werewolf_UI_Buttons_WithHungerSymbol_7
   - first:
-      213: -2357434724601445823
-    second: werewolf_UI_Buttons(Verticle)_8
+      213: -8033351041379529474
+    second: werewolf_UI_Buttons_WithHungerSymbol_8
   - first:
-      213: 6374274449473648066
-    second: werewolf_UI_Buttons(Verticle)_9
+      213: -1285795493629801998
+    second: werewolf_UI_Buttons_WithHungerSymbol_9
+  - first:
+      213: -5604888861201894013
+    second: werewolf_UI_Buttons_WithHungerSymbol_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,7 +130,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_Eat
+      name: werewolf_UI_Buttons_WithHungerSymbol_0
       rect:
         serializedVersion: 2
         x: 42
@@ -142,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5f35351c5b4cedd0800000000000000
-      internalID: -2455504837958877349
+      spriteID: 0e516076eba96a8d0800000000000000
+      internalID: -2835408772820232736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_MoveOn
+      name: werewolf_UI_Buttons_WithHungerSymbol_1
       rect:
         serializedVersion: 2
         x: 698
@@ -164,14 +167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e29c1a98db7a12e20800000000000000
-      internalID: 3324122432475875630
+      spriteID: 5a0d1d537b43fd240800000000000000
+      internalID: 4818628087796322469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_Settings
+      name: werewolf_UI_Buttons_WithHungerSymbol_2
       rect:
         serializedVersion: 2
         x: 1353
@@ -186,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b9a2cefcfc7f9900800000000000000
-      internalID: 693410293686118840
+      spriteID: 4269ebad761355f70800000000000000
+      internalID: 9175294137958569508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_QuitButton
+      name: werewolf_UI_Buttons_WithHungerSymbol_3
       rect:
         serializedVersion: 2
         x: 1353
@@ -208,14 +211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0090b434313cbe00800000000000000
-      internalID: 1061777712444641291
+      spriteID: eef27e2b5b42e3030800000000000000
+      internalID: 3476256325185777646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_Border
+      name: werewolf_UI_Buttons_WithHungerSymbol_4
       rect:
         serializedVersion: 2
         x: 26
@@ -230,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b19f6a3ab20d1b60800000000000000
-      internalID: 7718328335250461111
+      spriteID: 99640286f1b2f9980800000000000000
+      internalID: -8530051755325503847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_Time
+      name: werewolf_UI_Buttons_WithHungerSymbol_5
       rect:
         serializedVersion: 2
         x: 284
@@ -252,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c27c124e1026a82d0800000000000000
-      internalID: -3275698018696706260
+      spriteID: 4e186d06628ad87d0800000000000000
+      internalID: -2914488501051948572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_6
+      name: werewolf_UI_Buttons_WithHungerSymbol_6
       rect:
         serializedVersion: 2
         x: 487
@@ -274,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ccd40130e1f349d50800000000000000
-      internalID: 6743083940213444044
+      spriteID: e7ca6b64ea2dd5020800000000000000
+      internalID: 2332251828000304254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_Hunger
+      name: werewolf_UI_Buttons_WithHungerSymbol_7
       rect:
         serializedVersion: 2
         x: 693
@@ -296,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 713414dc2842b0a80800000000000000
-      internalID: -8499659727523724521
+      spriteID: c1f5c902619538d90800000000000000
+      internalID: -7096730636234498276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_Standard
+      name: werewolf_UI_Buttons_WithHungerSymbol_8
       rect:
         serializedVersion: 2
         x: 939
@@ -312,20 +315,20 @@ TextureImporter:
         height: 272
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 78, y: 48, z: 63, w: 55}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 142c5f2bb95b84fd0800000000000000
-      internalID: -2357434724601445823
+      spriteID: efc0f865acdc38090800000000000000
+      internalID: -8033351041379529474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: werewolf_UI_Buttons(Verticle)_Clock
+      name: werewolf_UI_Buttons_WithHungerSymbol_9
       rect:
         serializedVersion: 2
         x: 941
@@ -340,8 +343,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c5b9b5e6d8f57850800000000000000
-      internalID: 6374274449473648066
+      spriteID: 2f9c56c9fcfe72ee0800000000000000
+      internalID: -1285795493629801998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: werewolf_UI_Buttons_HungerIcon
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 705
+        width: 154
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3857486d64f6732b0800000000000000
+      internalID: -5604888861201894013
       vertices: []
       indices: 
       edges: []
@@ -350,7 +375,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a133749592a358b4785a07fa3620c6ad
+    spriteID: 2ec1554388c8e834695f1441632dae48
     internalID: 0
     vertices: []
     indices: 
@@ -360,16 +385,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      werewolf_UI_Buttons(Verticle)_6: 6743083940213444044
-      werewolf_UI_Buttons(Verticle)_Border: 7718328335250461111
-      werewolf_UI_Buttons(Verticle)_Clock: 6374274449473648066
-      werewolf_UI_Buttons(Verticle)_Eat: -2455504837958877349
-      werewolf_UI_Buttons(Verticle)_Hunger: -8499659727523724521
-      werewolf_UI_Buttons(Verticle)_MoveOn: 3324122432475875630
-      werewolf_UI_Buttons(Verticle)_QuitButton: 1061777712444641291
-      werewolf_UI_Buttons(Verticle)_Settings: 693410293686118840
-      werewolf_UI_Buttons(Verticle)_Standard: -2357434724601445823
-      werewolf_UI_Buttons(Verticle)_Time: -3275698018696706260
+      werewolf_UI_Buttons_HungerIcon: -5604888861201894013
+      werewolf_UI_Buttons_WithHungerSymbol_0: -2835408772820232736
+      werewolf_UI_Buttons_WithHungerSymbol_1: 4818628087796322469
+      werewolf_UI_Buttons_WithHungerSymbol_2: 9175294137958569508
+      werewolf_UI_Buttons_WithHungerSymbol_3: 3476256325185777646
+      werewolf_UI_Buttons_WithHungerSymbol_4: -8530051755325503847
+      werewolf_UI_Buttons_WithHungerSymbol_5: -2914488501051948572
+      werewolf_UI_Buttons_WithHungerSymbol_6: 2332251828000304254
+      werewolf_UI_Buttons_WithHungerSymbol_7: -7096730636234498276
+      werewolf_UI_Buttons_WithHungerSymbol_8: -8033351041379529474
+      werewolf_UI_Buttons_WithHungerSymbol_9: -1285795493629801998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
