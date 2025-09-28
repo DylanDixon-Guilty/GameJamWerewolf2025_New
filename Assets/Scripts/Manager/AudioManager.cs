@@ -19,7 +19,7 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioSource BGM;
     [SerializeField] private AudioSource selection;
-    //[SerializeField] private AudioSource eat;
+    [SerializeField] private AudioSource eat;
 
     private void Awake()
     {
@@ -47,7 +47,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayEatAudio()
     {
-        //eat.Play();
+        eat.Play();
     }
 
     public void PlayMoveAudio()
