@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5021856008169318350}
   - component: {fileID: 4061231551691909486}
   - component: {fileID: 391153350220511366}
+  - component: {fileID: 5091671416220172904}
   m_Layer: 5
   m_Name: Canvas_Gameplay
   m_TagString: Untagged
@@ -186,6 +187,18 @@ MonoBehaviour:
   foodBar: {fileID: 8710150125685663400}
   timeBar: {fileID: 3000737018212024478}
   humanAte: 0
+--- !u!114 &5091671416220172904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60525888758712979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440403c3eb9ad5b4fa057160af01c4df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectionAudioCue
 --- !u!1 &784989555899687407
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +896,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5091671416220172904}
+        m_TargetAssemblyTypeName: SelectionAudioCue, Assembly-CSharp
+        m_MethodName: CueAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4536806511610153577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1163,18 @@ MonoBehaviour:
       - m_Target: {fileID: 4061231551691909486}
         m_TargetAssemblyTypeName: Gameplay, Assembly-CSharp
         m_MethodName: OnOptionsPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5091671416220172904}
+        m_TargetAssemblyTypeName: SelectionAudioCue, Assembly-CSharp
+        m_MethodName: CueAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1949,6 +1986,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5091671416220172904}
+        m_TargetAssemblyTypeName: SelectionAudioCue, Assembly-CSharp
+        m_MethodName: CueAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6173392101806205284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,6 +2423,18 @@ MonoBehaviour:
       - m_Target: {fileID: 4061231551691909486}
         m_TargetAssemblyTypeName: Gameplay, Assembly-CSharp
         m_MethodName: Listen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5091671416220172904}
+        m_TargetAssemblyTypeName: SelectionAudioCue, Assembly-CSharp
+        m_MethodName: CueAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
