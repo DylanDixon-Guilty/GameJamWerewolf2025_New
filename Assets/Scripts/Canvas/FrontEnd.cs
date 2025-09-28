@@ -22,6 +22,7 @@ public class FrontEnd : MonoBehaviour
     {
         Debug.Log("New Game Pressed");
         CanvasManager.Instance.ShowCanvasGameplay();
+        Destroy(this.gameObject);
     }
 
 
