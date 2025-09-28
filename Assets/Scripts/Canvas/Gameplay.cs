@@ -41,7 +41,7 @@ public class Gameplay : MonoBehaviour
         hungerBarManager.SetTime(t);
     }
 
-    private void AddFood(float amount)
+    private void ChangeFood(float amount)
     {
         float f = Mathf.Clamp(hungerBarManager.foodBar.value + amount, 0f, hungerBarManager.foodBar.maxValue);
         hungerBarManager.SetFood(f);
@@ -51,14 +51,16 @@ public class Gameplay : MonoBehaviour
     {
         Debug.Log("Smell Pressed");
         Describe(Sense.Smell);
-        SpendTime(1f);
+        SpendTime(2f);
+        ChangeFood(-2f);
     }
 
     public void Listen()
     {
         Debug.Log("Listen Pressed");
         Describe(Sense.Listen);
-        SpendTime(1f);
+        SpendTime(2f);
+        ChangeFood(-2f);
     }
 
     public void Touch()
@@ -66,6 +68,7 @@ public class Gameplay : MonoBehaviour
         Debug.Log("Touch Pressed");
         Describe(Sense.Touch);
         SpendTime(2f);
+        ChangeFood(-3f);
     }
 
     public void Look()
@@ -73,12 +76,13 @@ public class Gameplay : MonoBehaviour
         Debug.Log("Look Pressed");
         Describe(Sense.Look);
         SpendTime(3f);
+        ChangeFood(-4f);
     }
 
     public void Eat()
     {
         Debug.Log("Eat Pressed");
-        AddFood(CurrentFood().nutrition);
+        ChangeFood(CurrentFood().nutrition);
 
         if (locationIndex >= locations.Length - 1)
         {
@@ -104,6 +108,7 @@ public class Gameplay : MonoBehaviour
         }
 
         hungerBarManager.timeBar.value -= 2;
+        ChangeFood(-2f);
         locationIndex += 1;
         WriteLine("You move on looking for food.");
         UpdateBackground();

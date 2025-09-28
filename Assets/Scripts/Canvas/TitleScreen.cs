@@ -11,5 +11,6 @@ public class TitleScreen : MonoBehaviour
     {
         Debug.Log("<color=green>Play Now Clicked</color>");
         CanvasManager.Instance.ShowCanvasFrontEnd();
+        Destroy(this.gameObject);
     }
 }
