@@ -22,4 +22,14 @@ public class CanvasManager : MonoBehaviour
     {
         Instantiate(Resources.Load("Canvas/" + "Canvas_FrontEnd") as GameObject);
     }
+
+    public void ShowCanvasGameplay()
+    {
+        Instantiate(Resources.Load("Canvas/" + "Canvas_Gameplay") as GameObject);
+    }
+
+    public void ShowCanvasOptions()
+    {
+        Instantiate(Resources.Load("Canvas/" + "Canvas_Options") as GameObject);
+    }
 }
