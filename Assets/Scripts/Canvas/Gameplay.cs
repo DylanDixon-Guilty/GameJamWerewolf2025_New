@@ -1,31 +1,30 @@
 using UnityEngine;
 using TMPro;
 using System;
-using System.Linq;
+using UnityEngine.UI;
+
 
 public class Gameplay : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI outputText;
-
     [SerializeField] private Location[] locations = new Location[5];
-
+    [SerializeField] private SpriteRenderer backgroundRenderer;
+    [SerializeField] private Image backgroundImage;
+    [SerializeField] private HungerBarManager hungerBarManager;
     private int locationIndex = 0;
-
-    private int location;
-
-    private void Reset()
-    {
-        // Pre-fill 5 entries with the required names to make setup easy
-        locations = new Location[5];
-        locations[0] = new Location("Bedroom");
-        locations[1] = new Location("Neighborhood");
-        locations[2] = new Location("Crosswalk");
-        locations[3] = new Location("Park");
-        locations[4] = new Location("Alley");
-    }
 
     private void Awake()
     {
+        if (hungerBarManager == null)
+            hungerBarManager = UnityEngine.Object.FindFirstObjectByType<HungerBarManager>();
+
+        if (hungerBarManager == null)
+        {
+            Debug.LogError("Gameplay: No HungerBarManager found in scene.");
+            enabled = false;
+            return;
+        }
+
         if (locations == null || locations.Length != 5)
         {
             Debug.LogError("Please keep exactly 5 locations in order: Bedroom, Neighborhood, Crosswalk, Park, Alley.");
@@ -33,37 +32,65 @@ public class Gameplay : MonoBehaviour
         }
 
         locationIndex = 0;
+        UpdateBackground();
     }
 
+    private void SpendTime(float amount)
+    {
+        float t = Mathf.Clamp(hungerBarManager.timeBar.value - amount, 0f, hungerBarManager.timeBar.maxValue);
+        hungerBarManager.SetTime(t);
+    }
+
+    private void AddFood(float amount)
+    {
+        float f = Mathf.Clamp(hungerBarManager.foodBar.value + amount, 0f, hungerBarManager.foodBar.maxValue);
+        hungerBarManager.SetFood(f);
+    }
 
     public void Smell()
     {
         Debug.Log("Smell Pressed");
         Describe(Sense.Smell);
+        SpendTime(1f);
     }
 
     public void Listen()
     {
         Debug.Log("Listen Pressed");
         Describe(Sense.Listen);
+        SpendTime(1f);
     }
 
     public void Touch()
     {
         Debug.Log("Touch Pressed");
         Describe(Sense.Touch);
+        SpendTime(2f);
     }
 
     public void Look()
     {
         Debug.Log("Look Pressed");
         Describe(Sense.Look);
+        SpendTime(3f);
     }
 
     public void Eat()
     {
         Debug.Log("Eat Pressed");
-        Move();
+        AddFood(CurrentFood().nutrition);
+
+        if (locationIndex >= locations.Length - 1)
+        {
+            WriteLine("You’ve reached the Alley. No further paths ahead.");
+            hungerBarManager.SetTime(0f);
+            return;
+        }
+
+        SpendTime(2f);
+        locationIndex += 1;
+        UpdateBackground();
+        WriteLine("You devour the food. You move on looking for more food.");
     }
 
     public void Move()
@@ -72,11 +99,34 @@ public class Gameplay : MonoBehaviour
         if (locationIndex >= locations.Length - 1)
         {
             WriteLine("You’ve reached the Alley. No further paths ahead.");
+            hungerBarManager.timeBar.value = 0;
             return;
         }
 
+        hungerBarManager.timeBar.value -= 2;
         locationIndex += 1;
         WriteLine("You move on looking for food.");
+        UpdateBackground();
+    }
+
+    private void UpdateBackground()
+    {
+        Location loc = CurrentLocation();
+        if (loc == null) return;
+
+        Sprite s = loc.backgroundSprite;
+
+        if (backgroundRenderer != null)
+        {
+            backgroundRenderer.sprite = s;
+        }
+
+        if (backgroundImage != null)
+        {
+            backgroundImage.sprite = s;
+            // Optional: match source sprite size
+            // backgroundImage.SetNativeSize();
+        }
     }
 
     public void OnQuitPressed()
@@ -160,6 +210,7 @@ public class Food
     [TextArea] public string soundDesc;
     [TextArea] public string touchDesc;
     [TextArea] public string lookDesc;
+    public float nutrition = 5f;
 }
 
 [Serializable]
@@ -167,9 +218,12 @@ public class Location
 {
     public string locationName;
     public Food food = new Food();
+    public Sprite backgroundSprite;
 
     public Location(string name)
     {
         locationName = name;
     }
 }
+
+

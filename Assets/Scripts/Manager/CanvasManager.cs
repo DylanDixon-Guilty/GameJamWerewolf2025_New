@@ -30,6 +30,21 @@ public class CanvasManager : MonoBehaviour
 
     public void ShowCanvasOptions()
     {
-        Instantiate(Resources.Load("Canvas/" + "Canvas_Options") as GameObject);
+        Instantiate(Resources.Load("Canvas/" + "OptionsMenu") as GameObject);
+    }
+
+    public void ShowCanvasEndDead()
+    {
+        Instantiate(Resources.Load("Canvas/" + "End_Dead") as GameObject);
+    }
+
+    public void ShowCanvasEndGood()
+    {
+        Instantiate(Resources.Load("Canvas/" + "End_HumansAte") as GameObject);
+    }
+
+    public void ShowCanvasEndBad()
+    {
+        Instantiate(Resources.Load("Canvas/" + "End_NoHumansAte") as GameObject);
     }
 }
