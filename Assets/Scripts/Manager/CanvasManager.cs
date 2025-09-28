@@ -40,11 +40,11 @@ public class CanvasManager : MonoBehaviour
 
     public void ShowCanvasEndGood()
     {
-        Instantiate(Resources.Load("Canvas/" + "End_HumansAte") as GameObject);
+        Instantiate(Resources.Load("Canvas/" + "End_NoHumansAte") as GameObject);
     }
 
     public void ShowCanvasEndBad()
     {
-        Instantiate(Resources.Load("Canvas/" + "End_NoHumansAte") as GameObject);
+        Instantiate(Resources.Load("Canvas/" + "End_HumansAte") as GameObject);
     }
 }

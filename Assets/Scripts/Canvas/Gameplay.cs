@@ -51,7 +51,7 @@ public class Gameplay : MonoBehaviour
     {
         Debug.Log("Smell Pressed");
         Describe(Sense.Smell);
-        SpendTime(2f);
+        SpendTime(1f);
         ChangeFood(-2f);
     }
 
@@ -59,7 +59,7 @@ public class Gameplay : MonoBehaviour
     {
         Debug.Log("Listen Pressed");
         Describe(Sense.Listen);
-        SpendTime(2f);
+        SpendTime(1f);
         ChangeFood(-2f);
     }
 
@@ -67,7 +67,7 @@ public class Gameplay : MonoBehaviour
     {
         Debug.Log("Touch Pressed");
         Describe(Sense.Touch);
-        SpendTime(2f);
+        SpendTime(1f);
         ChangeFood(-3f);
     }
 
@@ -83,15 +83,19 @@ public class Gameplay : MonoBehaviour
     {
         Debug.Log("Eat Pressed");
         ChangeFood(CurrentFood().nutrition);
+        if(CurrentFood().isHuman)
+        {
+            hungerBarManager.AteHuman();
+        }
 
         if (locationIndex >= locations.Length - 1)
         {
             WriteLine("You’ve reached the Alley. No further paths ahead.");
-            hungerBarManager.SetTime(0f);
+            hungerBarManager.timeBar.value = 0;
             return;
         }
 
-        SpendTime(2f);
+        SpendTime(5f);
         locationIndex += 1;
         UpdateBackground();
         WriteLine("You devour the food. You move on looking for more food.");
@@ -107,8 +111,8 @@ public class Gameplay : MonoBehaviour
             return;
         }
 
-        hungerBarManager.timeBar.value -= 2;
-        ChangeFood(-2f);
+        SpendTime(4f);
+        ChangeFood(-4f);
         locationIndex += 1;
         WriteLine("You move on looking for food.");
         UpdateBackground();
@@ -216,6 +220,7 @@ public class Food
     [TextArea] public string touchDesc;
     [TextArea] public string lookDesc;
     public float nutrition = 5f;
+    public bool isHuman;
 }
 
 [Serializable]

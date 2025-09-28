@@ -9,7 +9,7 @@ public class HungerBarManager : MonoBehaviour
     public Slider timeBar;
     public bool humanAte = false;
 
-    private int hungerThreshold = 4; // The amount of hunger you need to not starve
+    private int hungerThreshold = 4; // The amount of hunger you need to not die
 
     private void Awake()
     {
@@ -50,8 +50,19 @@ public class HungerBarManager : MonoBehaviour
         timeBar.value = time;
     }
 
+    public void AteHuman()
+    {
+        humanAte = true;
+    }
+
     private void Update()
     {
+        if(foodBar.value <= 0)
+        {
+            Debug.Log("Game Over: You starved!");
+            CanvasManager.Instance.ShowCanvasEndDead();
+            Destroy(this.gameObject);
+        }
         if (timeBar.value == 0 && foodBar.value < hungerThreshold)
         {
             Debug.Log("Game Over: You starved!");
@@ -61,13 +72,13 @@ public class HungerBarManager : MonoBehaviour
         if (timeBar.value == 0 && foodBar.value >= hungerThreshold)
         {
             Debug.Log("Game Over: You Lived!");
-            if (!humanAte)
+            if(humanAte == false)
             {
                 Debug.Log("But you didn't eat any humans, you monster!");
                 CanvasManager.Instance.ShowCanvasEndGood();
                 Destroy(this.gameObject);
             }
-            else
+            else if(humanAte)
             {
                 Debug.Log("You ate a human, you monster!");
                 CanvasManager.Instance.ShowCanvasEndBad();
